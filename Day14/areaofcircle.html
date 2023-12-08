@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area of Circle</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+            text-align: center;
+        }
+        input{
+          padding: 10px;
+          font-size: 15px;
+          align-items: center;
+          border-radius: 15px;
+          border: none;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            font-family: fantasy;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Area of Circle:</h1>
+
+    <label>Enter the Radius (r) : </label>
+    <input type="number" id="a" required>
+    
+    <br>
+    <br>
+
+    <div class="btn">
+        <button onclick="circle1()"> Functn 1 </button>
+        <button onclick="circle2()"> Functn 2 </button>
+        <button onclick="circle3(a)"> Functn 3 </button>
+        <button onclick="circle4(a)"> Functn 4 </button>
+      </div> 
+
+    <p id="para"></p>
+</body>
+<script>
+    // Without Argument Without Returntype :
+    function circle1(){
+        var r = document.getElementById('a').value;
+        var d = parseInt((3.14) * r * r);
+        var z = (`Area of Circle : 3.14 * ${r} * ${r} = ${d}`);
+        alert(z);
+    }
+
+    // Without Argument With Returntype :
+    function circle2(){
+        var r = document.getElementById('a').value;
+        var d = parseInt((3.14) * r * r);
+        var z = (`Area of Circle : 3.14 * ${r} * ${r} = ${d}`);
+        return(alert(z));
+    }
+
+    // With Argument With Returntype :
+    function circle3(r){
+        var r = document.getElementById('a').value;
+        var d = parseInt((3.14) * r * r);
+        var z = (`Area of Circle : 3.14 * ${r} * ${r} = ${d}`);
+        return(alert(z));
+    }
+
+    // With Argument Without Returntype :
+    function circle4(r){
+        var r = document.getElementById('a').value;
+        var d = parseInt((3.14) * r * r);
+        var z = (`Area of Circle : 3.14 * ${r} * ${r} = ${d}`);
+        alert(z);
+    }
+</script>
+</html>

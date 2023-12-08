@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Controls</title>
+</head>
+<body bgcolor="grey">
+    <form>
+        <table border="4" bgcolor="deepskyblue" cellpadding="10" align="center">
+            <tr>
+                <td>Username: <td>
+                    <input type="text" name="username" size= "18" id="user" placeholder="Enter Username">
+            </tr>
+
+            <tr>
+                <td>Password: </td>
+
+                <td>
+                   <input type="password" size="18" name="password" id="pswd" placeholder="Enter Password">
+                </td>    
+            </tr>
+            
+            <tr>
+                <td>Address: <td>
+                    <textarea rows="5" cols="25" name="addr"></textarea>
+            </tr>
+
+            <tr>
+                <td>Gender: <td> 
+                    <input type="radio" name="m" id="male">Male
+                    <input type="radio" name="fm" id="female">Female
+            </tr>
+            
+            <tr>
+                <td>Courses: <td> 
+                    <input type="checkbox" id="course1" name="html">HTML
+                    <input type="checkbox" id="course2" name="css" >CSS
+                    <input type="checkbox" id="course3" name="js">JAVA SCRIPT 
+            </tr>
+
+            <tr>
+                <td>City: <td>
+                    <select id="city" name="city" multiple>                                   
+                        <option>Select</option>                                    
+                        <option value="madu">Madurai</option>                                   
+                        <option value="chn">Chennai</option>                                    
+                        <option value="bngl">Bangalore</option>                               
+                    </select>
+
+            </tr>
+
+            <tr>
+                <td>Date of Birth: <td> 
+                    <input type="date" id="dob" name="dob">
+            </tr>
+
+            <tr>
+                <td>Month & Year: <td> 
+                    <input type="month" id="month" name="month">
+            </tr>
+
+            <tr>
+                <td>Week: <td> 
+                    <input type="week" id="week" name="week">
+            </tr>
+
+            <tr>
+                <td>Phone Number: <td> 
+                    <input type="number" id="phno" name="phno" min="1" max="10">
+            </tr>
+
+            <tr>
+                <td>Color: <td> 
+                    <input type="color" id="colr" name="colr">
+            </tr>
+
+            <tr>
+                <td>Data List :<td>
+                    <input list="browsers" id="bro" name="bro">
+                                <datalist id="browsers">
+                                    <option value="Internet Explorer">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+            </tr>
+
+            <tr>
+                <td>Range: <td> 
+                    <input type="range" id="range" name="range" min="1" max="10">
+            </tr>
+
+            <tr>
+                <td>URL: <td> 
+                    <input type="url" id="color" name="color">
+            </tr>
+
+            <tr>
+                <td>E-Mail ID: 
+                    <td> <input type="email"  id="email" name="mail">
+            </tr>
+
+            <tr>
+                <td>File Upload: <td> 
+                    <input type="file"  id="fileup" name="file">
+
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                            <input type="submit" id="submit" name="submit" value="Submit">
+                            <input type="reset" id="clr" name="clr" value="Clear">
+                            <input type="button" id="user" name="user" value="User">
+                            <button id="done" name="button">Done</button>
+    
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

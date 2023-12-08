@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+
+.p1{
+    background-color: deepskyblue;
+    padding:20px;
+    margin: 100px 25%;;
+    width:50%;
+    word-wrap: break-word;
+}

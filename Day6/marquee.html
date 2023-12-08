@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marquee</title>
+    <style>
+        body{
+            margin: 30px;
+        }
+
+        .marquee{
+            height: 35px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: deepskyblue;
+            
+            position: relative;
+            overflow: hidden;
+        }
+
+        .marquee p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+            position: absolute;
+            animation: marquee 15s linear infinite;
+            
+            /* animation-name: marquee;
+            animation-duration: 8s;
+            animation-iteration-count: linear infinite; */
+        }
+
+        @keyframes marquee{
+            0%{transform: translateX(100%)}
+            100%{transform: translateX(-100%)};
+        }
+
+        p:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">MARQUEE</h1>
+
+    <div class="marquee">
+        <p>Marquee used to create scrolling text or image in a webpages. The Marquee tag in HTML is used to create scrolling text or image in a webpages.</p>
+    </div>
+</body>
+</html>

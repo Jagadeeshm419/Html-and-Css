@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Factorial</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Factorial :</h1>
+
+    <label>Enter the Number : </label>
+    <input type="number" id="n"required>
+    
+    <br>
+    <br>
+
+    <input type="button" value="Submit" onclick="fact()" style="cursor: pointer; padding:10px; font-size: 20px; font-family: fantasy;">
+
+    <p id="para"></p>
+</body>
+<script>
+    function fact(){
+        var n = document.getElementById("n").value;
+        f = 1;
+
+        for(i=1; i<=n; i++){
+            f *= i;
+        }
+
+        var a = (`Factorial of ${n} = ${f}`);
+        document.getElementById('para').innerHTML = a;
+    }  
+</script>
+</html>

@@ -1,0 +1,31 @@
+h1{
+  text-align: center;
+}
+
+.scroll{
+  background-color:cadetblue;
+  height: 200px;
+  width: 300px;
+  overflow: scroll;
+}
+
+.hidden{
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.auto{
+  background-color:cadetblue;
+  height: 200px;
+  width: 300px;
+  overflow: auto;
+}
+
+.visible{
+  background-color:aqua;
+  height: 200px;
+  width: 300px;
+  overflow: visible;
+}

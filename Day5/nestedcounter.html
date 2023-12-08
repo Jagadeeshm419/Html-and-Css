@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Counter</title>
+    <style>
+        body{
+            counter-reset: a;
+        }
+
+        h1{
+            counter-reset: b;
+        }
+
+        h1::before{
+            counter-increment: a;
+            content: counter(a) ".";
+        }
+
+        h2::before{
+            counter-increment: b;
+            content: counter(a) "." counter(b) " " ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Counter: </h1>
+
+    <h1> Counter</h1>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+<br>
+    <h1> Counter</h1>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+<br>
+    <h1> Counter</h1>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+<br>
+    <h1> Counter</h1>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+    <h2>Count</h2>
+</body>
+</html>

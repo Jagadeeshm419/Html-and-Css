@@ -1,0 +1,30 @@
+.head{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.p1{
+    background-color: aqua;
+    padding-top: 40px;
+}
+
+.p2{
+    background-color: aquamarine;
+    padding-right: 50%;
+}
+
+.p3{
+    background-color: burlywood;
+    padding-bottom: 60px;
+}
+
+.p4{
+    background-color: teal;
+    padding-left: 60%;
+}
+
+.p5{
+    background-color: chocolate;
+    padding: 40px 20% 40px 20%;
+}

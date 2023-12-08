@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area of Rectangle</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+            text-align: center;
+        }
+        input{
+          padding: 10px;
+          font-size: 15px;
+          align-items: center;
+          border-radius: 15px;
+          border: none;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            font-family: fantasy;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Area of Rectangle:</h1>
+
+    <label>Enter the Length (l) : </label>
+    <input type="number" id="l" required>
+
+    <br>
+    <br>
+
+    <label>Enter the Breadth (b) : </label>
+    <input type="number" id="b" required>
+    
+    <br>
+    <br>
+
+    <div class="btn">
+        <button onclick="rectangle1()"> Functn 1 </button>
+        <button onclick="rectangle2()"> Functn 2 </button>
+        <button onclick="rectangle3(l,b)"> Functn 3 </button>
+        <button onclick="rectangle4(l,b)"> Functn 4 </button>
+      </div> 
+
+</body>
+<script>
+    // Without Argument Without Returntype :
+    function rectangle1(){
+        var l = document.getElementById('l').value;
+        var b = document.getElementById('b').value;
+        var r = parseInt(l * b);
+
+        var z = (`Area of Rectangle : l * b => ${l} * ${b} = ${r}`);
+        alert(z)
+    }
+
+    // Without Argument With Returntype :
+    function rectangle2(){
+        var l = document.getElementById('l').value;
+        var b = document.getElementById('b').value;
+        var r = parseInt(l * b);
+
+        var z = (`Area of Rectangle : l * b => ${l} * ${b} = ${r}`);
+        return (alert(z));
+    }
+
+    // With Argument Without Returntype :
+    function rectangle3(l,b){
+        var l = document.getElementById('l').value;
+        var b = document.getElementById('b').value;
+        var r = parseInt(l * b);
+
+        var z = (`Area of Rectangle : l * b => ${l} * ${b} = ${r}`);
+        alert(z)
+    }
+
+    // With Argument Without Returntype :
+    function rectangle4(l,b){
+        var l = document.getElementById('l').value;
+        var b = document.getElementById('b').value;
+        var r = parseInt(l * b);
+
+        var z = (`Area of Rectangle : l * b => ${l} * ${b} = ${r}`);
+        return (alert(z));
+    }
+</script>
+</html>

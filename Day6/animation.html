@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .anime{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color:aquamarine;
+            animation-name: anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anim{
+            0% {background: deepskyblue; left:0px; top:0px}
+            25%{background: linear-gradient(red,blue,yellow); left:300px; top:0px}
+            50%{background: lime; left:300px; top:300px}
+            75%{background: radial-gradient(blue,orange,red); left:0px; top:300px}
+            100%{background:yellow; left:0px; top:0px}            
+        }
+    </style>
+</head>
+<body>
+    <div class="anime"></div>
+</body>
+</html>

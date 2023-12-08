@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Class</title>
+    <style>
+/* One: */
+        a{
+            font-size: 20px;
+        }
+        a:link{
+            color: red;
+        }
+        a:hover{
+            color:limegreen;
+        }
+        /* a:visited{
+            color:violet;
+        } */
+
+/* Two: */
+        p{
+            color:darkgreen;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        p:hover{
+            font-size: 22px;
+            text-decoration: underline;
+            color: red;
+        }
+
+/* Three: */
+        .div{
+            display: inline-block;
+            padding: 10px;
+            font-family: fantasy;
+            background-color: orange;
+            cursor: pointer;
+        }
+        .div:hover{
+            background-color: aqua;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Styling A Link Depending On State :</h1>
+
+    <a href="#">Click The Link</a>
+
+    <p>Hover On Me</p>
+
+    <div class="div">Hover</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-color: violet;
+}
+
+.p1{
+    background-color: aqua;
+    /* margin-top: auto; */
+    margin-top: 50px;
+}
+
+.fr{
+    float:right;
+}
+
+.p2{
+    background-color: aquamarine;
+    /* margin-right: auto; */
+    margin-right: 60%;
+}
+
+.p3{
+    background-color:cadetblue;
+    /* margin-bottom: auto; */
+    margin-bottom: 50px;
+}
+
+.lr{
+    float:left;
+}
+
+.p4{
+    background-color: cornflowerblue;
+    /* margin-left: auto; */
+    margin-left: 480px;
+}
+
+.p5{
+    background-color: deepskyblue;
+    /* margin: auto; */
+    margin:100px 200px 300px 200px
+}

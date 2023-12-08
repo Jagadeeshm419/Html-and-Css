@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area of Circle</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Area of Circle:</h1>
+
+    <label>Enter Value of r : </label>
+    <input type="number" id="a" required>
+    
+    <br>
+    <br>
+
+    <input type="button" value="Submit" onclick="circle()" style="cursor: pointer; padding:10px; font-size: 20px; font-family: fantasy;">
+
+    <p id="para"></p>
+</body>
+<script>
+    function circle (r){
+        var r = document.getElementById('a').value;
+        var d = parseInt((3.14) * r * r);
+        var z = (`Area of Circle : 3.14 * ${r} * ${r} = ${d}`);
+
+        document.getElementById('para').innerHTML = z;
+
+    }
+
+    // function add(a, b, c){
+    //     var a = document.getElementById('a').value;
+    //     var b = document.getElementById('b').value;
+    //     var c = document.getElementById('c').value;
+
+    //     var d = parseInt(a + b + c);
+    //     var z = (`${a} + ${b} + ${c} = ${d}`);
+    //     document.getElementById('para').innerHTML = z;
+    // }
+    
+</script>
+</html>

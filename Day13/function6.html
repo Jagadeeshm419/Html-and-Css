@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Odd or Even</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        h1{
+            text-decoration: underline;
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+        button{
+            cursor: pointer;
+            padding:10px;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odd or Even :</h1>
+
+    <label>Enter the Number : </label>
+    <input type="number" id="num" required>
+    
+    <br>
+    <br>
+
+    <button type="submit" onclick="oddeve()">Submit</button>
+
+    <p id="para"></p>
+</body>
+
+<script>
+    function oddeve(){
+        var nums = document.getElementById("num").value;
+        var num = parseInt(nums);
+        
+        if(num%2==0){
+            var a = (`* ${num} is an Even Number`);
+            document.getElementById('para').innerHTML = a;   
+        }
+        else{
+            var a = (`* ${num} is an Odd Number`);
+            document.getElementById('para').innerHTML = a;
+        }
+    }  
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Level Of Nested Counter</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        
+        ol{
+            list-style-type: none;
+            counter-reset: a;
+        }
+
+        li::before{
+            counter-increment: a;
+            content: counter(a)  ". ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Level Of Nested Counter</h1>
+
+    <ol>
+        <li>List 1</li>
+        <li>List 1</li>
+        <br>
+        <ol>
+            <li>List 2</li>
+            <li>List 2</li>
+            <br>
+            <ol>
+                <li>List 3</li>
+                <li>List 3</li>
+                <br>
+            </ol>
+            <li>List 2</li>
+            <li>List 2</li>
+            <br>
+        </ol>
+        <li>List 1</li>
+        <li>List 1</li> 
+    </ol>
+</body>
+</html>

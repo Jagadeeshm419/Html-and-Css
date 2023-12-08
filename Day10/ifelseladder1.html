@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If-Else Ladder 1</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Classification Of Final Result :</h1>
+
+    <label>Enter Name : </label>
+    <input type="text" id="name" required id="value" >
+    
+    <br>
+    <br>
+
+    <label>Enter a Value : </label>
+    <input type="number" id="avg" required id="value">
+    
+    <br>
+    <br>
+
+    <button type="submit" onclick="result()" style="cursor: pointer; padding:10px; font-size: 20px; font-family: fantasy;">Submit</button>
+
+    <script>
+        function result(){
+
+            let name = document.getElementById("name").value;
+            let avg  = document.getElementById("avg").value;
+
+            if(avg>80 && avg<=100){
+                document.write(name + " Result : Distinction")
+            }
+
+            else if(avg>60 && avg<=80){
+                document.write(name + " Result : First-Class")
+            }
+
+            else if(avg>45 && avg<=60){
+                document.write(name + " Result : Second-Class")
+            }
+            
+            else{
+                document.write(name + " Result : Reappear")
+            }
+        }    
+    </script>
+</body>
+</html>

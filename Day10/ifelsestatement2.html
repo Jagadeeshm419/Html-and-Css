@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If-Else Statement 2</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Positive/Negative Number :</h1>
+
+    <label>Enter a Number : </label>
+    <input type="number" id="n" required id="value">
+    
+    <br>
+    <br>
+
+    <button type="submit" onclick="result()" style="cursor: pointer; padding:10px; font-size: 20px; font-family: fantasy;">Submit</button>
+
+    <script>
+        function result(){
+        let n = document.getElementById("n").value;
+
+            if(n>=0){
+                document.write(n + " is a Positve Number");
+            }
+            else{
+                document.write(n + " is a Negative Number");
+            }
+        }
+    </script>
+</body>
+</html>

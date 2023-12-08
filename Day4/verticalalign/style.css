@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color:red;
+}
+
+.img1{
+    height :40px;
+    width: 50px;
+    vertical-align:text-bottom;
+}
+
+.img2{
+    height :40px;
+    width: 50px;
+    vertical-align:text-top;
+}

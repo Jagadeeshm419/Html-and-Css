@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tool-Tip</title>
+    <style>
+        body{
+            text-align: center; 
+        }
+
+        .tooltip{
+            position:relative;
+            display: inline-block;
+            border: 1px solid black;
+            padding: 8px;       
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tooltip .tiptext{
+            position: absolute;
+            z-index: 1;
+
+            visibility: hidden;
+            width:100px;
+            padding: 10px;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+/* Top */
+            /* left: -32px;
+            top: -60px; */
+
+/* Bottom */
+            left: -32px;
+
+/* Left */
+            /* right: 70px;
+            top: -18px; */
+
+/* Right */
+            /* left: 70px;
+            top: -18px; */
+        }
+
+        .tooltip:hover .tiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tool-Tip</h1>
+<br><br>
+
+    <div class="tooltip"> Hover
+        <p class="tiptext"> Tooltip </p>
+    </div>
+</body>
+</html>

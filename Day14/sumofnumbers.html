@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sum of N Numbers</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+            text-align: center;
+        }
+        input{
+          padding: 10px;
+          font-size: 15px;
+          align-items: center;
+          border-radius: 15px;
+          border: none;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            font-family: fantasy;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Sum of N Numbers:</h1>
+
+    <label>Enter a Value : </label>
+    <input type="number" id="n" required>
+
+    <br>
+    <br>
+
+    <div class="btn">
+        <button onclick="sum1()">  Functn 1 </button>
+        <button onclick="sum2()">  Functn 2 </button>
+        <button onclick="sum3(n)"> Functn 3 </button>
+        <button onclick="sum4(n)"> Functn 4 </button>
+      </div> 
+
+</body>
+<script>
+    // Without Argument Without Returntype :
+    function sum1(){
+        var n = document.getElementById('n').value;
+        sum = 0;
+
+        for(var i=0; i<=n; i++){
+            sum += i;
+        }
+        var a = (`Total = ${sum}`);
+        alert(a);
+    }
+    
+    // Without Argument With Returntype :
+    function sum2(){
+        var n = document.getElementById('n').value;
+        sum = 0;
+
+        for(var i=0; i<=n; i++){
+            sum += i;
+        }
+        var a = (`Total = ${sum}`);
+        return(alert(a));
+    }
+
+    // With Argument With Returntype :
+    function sum3(n){
+        var n = document.getElementById('n').value;
+        sum = 0;
+
+        for(var i=0; i<=n; i++){
+            sum += i;
+        }
+        var a = (`Total = ${sum}`);
+        return(alert(a));
+    }
+
+    // With Argument Without Returntype :
+    function sum4(n){
+        var n = document.getElementById('n').value;
+        sum = 0;
+
+        for(var i=0; i<=n; i++){
+            sum += i;
+        }
+        var a = (`Total = ${sum}`);
+        alert(a);
+    }
+</script>

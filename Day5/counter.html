@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <style>
+        body{
+            counter-reset: a;
+        }
+
+        h1::before{
+            counter-increment: a;
+            content: counter(a) ". ";
+        }
+    </style>
+</head>
+<body>
+    <h2>COUNTER:</h2>
+    
+    <h1> Counter</h1>
+    <h1> Counter</h1>
+    <h1> Counter</h1>
+    <h1> Counter</h1>
+    <h1> Counter</h1>
+    <h1> Counter</h1>  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area of Square</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+            text-align: center;
+        }
+        input{
+          padding: 10px;
+          font-size: 15px;
+          align-items: center;
+          border-radius: 15px;
+          border: none;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            font-family: fantasy;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Area of Square:</h1>
+    
+    <label>Enter Value of Area (a) :</label>
+    <input type="number" id="a" required>
+        
+    <br>
+    <br>
+
+    <div class="btn">
+        <button onclick="square1()"> Functn 1 </button>
+        <button onclick="square2()"> Functn 2 </button>
+        <button onclick="square3(a)"> Functn 3 </button>
+        <button onclick="square4(a)"> Functn 4 </button>
+    </div>
+
+    <script>
+        // Without Argument Without Returntype :
+        function square1(){
+            var a = document.getElementById('a').value;
+            var d = parseInt(a * a);
+            var z = (`Area of Square : ${a} * ${a} = ${d}`)
+            alert(z);
+        }
+
+        // Without Argument With Returntype :
+        function square2(){
+            var a = document.getElementById('a').value;
+            var d = parseInt(a * a);
+            var z = (`Area of Square : ${a} * ${a} = ${d}`)
+            return(alert(z));
+        }
+
+        // With Argument Without Returntype :
+        function square3(a){
+            var a = document.getElementById('a').value;
+            var d = parseInt(a * a);
+            var z = (`Area of Square : ${a} * ${a} = ${d}`)
+            alert(z);
+        }
+
+        // With Argument Without Returntype :
+        function square4(a){
+            var a = document.getElementById('a').value;
+            var d = parseInt(a * a);
+            var z = (`Area of Square : ${a} * ${a} = ${d}`)
+            alert(z);
+        }
+    </script>
+</body>
+</html>

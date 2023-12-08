@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime or Not a Prime</title>
+    <style>
+        body{
+            font-family: fantasy;
+            font-size: 22px;
+            background-color: deepskyblue;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">Prime or Not a Prime Number :</h1>
+
+    <label>Enter the Number : </label>
+    <input type="number" id="n"required>
+    
+    <br>
+    <br>
+
+    <input type="button" value="Submit" onclick="isPrime()" style="cursor: pointer; padding:10px; font-size: 20px; font-family: fantasy;">
+
+    <p id="para"></p>
+</body>
+<script>
+    function isPrime(){
+        var num = document.getElementById('n').value;
+        var count = 0;
+
+        for(var i=1; i<=num; i++)
+        {
+        if(num % i == 0)
+            count++;
+        }
+
+        if(count == 2){
+            var a = (`* ${num} is a Prime Number`);
+            document.getElementById('para').innerHTML = a;
+        }
+        
+        else{
+            var a = (`* ${num} is Not a Prime Number`);
+            document.getElementById('para').innerHTML = a;
+        }
+    }
+</script>
+</html>

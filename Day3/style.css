@@ -1,0 +1,42 @@
+body{
+    font-family: Arial;
+    background-color: deepskyblue;
+}
+
+h1{
+    color: gold;
+    font-weight:bolder;
+    font-size: 50px;
+    font-variant: small-caps;
+    font-style: italic;
+
+    text-align: center;
+    border: solid black;
+    border-radius: 10px;
+    background-color: black;
+}
+.img1{
+    float: right;
+
+    height: 170px;
+    width:170px;
+    margin: 12px;
+}
+
+p{
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
+    padding: 8px;
+    text-align: justify;
+}
+
+.img2{
+    float: left;
+
+    height: 170px;
+    width:170px;
+    margin: 12px;
+}
+

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+.we a{
+    text-decoration: none;
+} */
+
+.div3{
+    background-color: aquamarine;
+}
+
+.div3 li{
+    list-style: none;
+}
+
+.div3 a{
+    text-decoration: none;
+}
+
+.div3 ul{
+    display: flex;
+    margin-left: 1000px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* 
+.div3 li{
+    margin-left: 20px;
+    border: 1px solid red;
+    padding: 10px;
+} */
+
+/* .div4 li{
+    border: 1px solid red;
+
+    padding-bottom:  20px;
+    padding-left: 40px;
+    margin-top: 20px ;
+} */

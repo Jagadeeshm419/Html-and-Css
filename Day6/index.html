@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Accordion using CSS</title>
+		<style type="text/css">
+			.container
+			{
+				width:100%;
+				max-width:600px;
+			}
+			.accordion
+			{
+				margin:0;
+				padding:0;
+				list-style-type:none;
+			}
+			.header
+			{
+				display:block;
+				padding:15px 20px;
+				background:red;
+				color:#fff;
+				text-decoration:none;
+				font-size:15px;
+				text-transform:uppercase;
+				text-shadow:1px 1px 0 rgba(0,0,0,.1);
+				margin-bottom:5px;
+			}
+			.content p
+			{
+				margin:10px;
+				padding-right:15px;
+			}
+			.content
+			{
+				height:0;
+				overflow:hidden;
+				transition:400ms ease;
+			}
+			.header:active
+			{
+				background:magenta;
+			}
+			.content:target
+			{
+				height:150px;
+				overflow-y:scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<ul class="accordion">
+
+		<li>
+			<a href="#first" class="header">FIRST</a>
+		<div class="content" id="first">
+			<p align="justify">Computer stands for Common Oriented Machine Particularly Used for Trade, Education and Research. Charles Babbage is called as father of the computer. There are three parts of computer, such as ALU, Memory and Control unit. ALU stands for Arithmetic and Logical Unit. Memory is a storage device. Control unit is used to control the physical components of a system.</p>
+		</div>
+		</li>
+
+		<li>
+			<a href="#second" class="header">SECOND</a>
+		<div class="content" id="second">
+			<p align="justify">Computer stands for Common Oriented Machine Particularly Used for Trade, Education and Research. Charles Babbage is called as father of the computer. There are three parts of computer, such as ALU, Memory and Control unit. ALU stands for Arithmetic and Logical Unit. Memory is a storage device. Control unit is used to control the physical components of a system.</p>
+		</div>
+		</li>
+
+		<li>
+			<a href="#third" class="header">THIRD</a>
+		<div class="content" id="third">
+			<p align="justify">Computer stands for Common Oriented Machine Particularly Used for Trade, Education and Research. Charles Babbage is called as father of the computer. There are three parts of computer, such as ALU, Memory and Control unit. ALU stands for Arithmetic and Logical Unit. Memory is a storage device. Control unit is used to control the physical components of a system.</p>
+		</div>
+		</li>
+		
+		</ul>
+		</div>
+	</body>
+</html>
+	
